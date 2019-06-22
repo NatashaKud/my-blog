@@ -10,24 +10,28 @@
 
 .info-block {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/info-block.png') no-repeat center / cover;
+
+  &__content {
+    padding: 50px 0;
+  }
+  &__text {
+    color: #fff;
+    margin: 0;
+  }
 }
-.info-block__content {
-  padding: 50px 0;
-}
-.info-block__text {
-  color: #fff;
-  margin: 0;
-}
+
 
 .contacts {
   background-color: #23374F;
+
+  &__content {
+    padding: 33px 0 31px 0;
+  }
+  &__wrapper-link {
+    text-align: center;
+  }
+  &__link, &__link:hover {
+    color: #fff;
+  }
 }
-.contacts__content {
-  padding: 33px 0 31px 0;
-}
-.contacts__wrapper-link {
-  text-align: center;
-}
-.contacts__link, .contacts__link:hover {
-  color: #fff;
-}
+
