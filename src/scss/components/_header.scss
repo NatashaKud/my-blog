@@ -1,19 +1,23 @@
-.header__content {
-  padding: 24px 0 48px 0;
-}
-.header__brand {
-  margin-bottom: 16px;
-  position: relative;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.header__link {
-  font-size: 36px;
-  line-height: 54px; 
-}
-.header__link, .header__link:hover {
-  color: #000;
-}
-.header__link_italic {
-  font-style: italic;
+.header {
+  &__content {
+    padding: 24px 0 48px 0;
+  }
+  &__brand {
+    margin-bottom: 16px;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__link {
+    font-size: 36px;
+    line-height: 54px; 
+    color: #000;
+
+    &:hover {
+      color: #000;
+    }
+    &_italic {
+      font-style: italic;
+    }
+  }
 }
