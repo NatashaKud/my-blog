@@ -1,9 +1,33 @@
 .my-blog {
   background-color: #FFE01B;
+  padding: 50px 0;
+
+  &__title-one {
+    @extend .bold-uppercase;
+    margin-bottom: 70px;
+  }
+  &__title-two {
+    @extend .bold-uppercase;
+    font-size: 36px;
+    line-height: 149.8%;
+    margin-bottom: 40px;
+  }
+  &__image {
+    margin-bottom: 35px;
+  }
+  &__text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 149.8%;
+    margin-bottom: 20px;
+
+    &_indent {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.my-blog__text {
-  font-weight: bold;
-font-size: 18px;
-line-height: 149.8%;
+hr {
+  margin-top: 53px;
+  margin-bottom: 47px;
 }
