@@ -8,8 +8,7 @@
   }
   &__title-two {
     @extend .bold-uppercase;
-    font-size: 36px;
-    line-height: 149.8%;
+    @extend .textsize;
     margin-bottom: 40px;
   }
   &__image {
@@ -18,7 +17,7 @@
   &__text {
     font-weight: bold;
     font-size: 18px;
-    line-height: 149.8%;
+    line-height: 27px;
     margin-bottom: 20px;
 
     &_indent {

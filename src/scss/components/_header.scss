@@ -1,10 +1,14 @@
+.textsize {
+  font-size: 36px;
+  line-height: 54px;
+}
+
 .header {
   &__content {
     padding: 35px 0;
   }
   &__link {
-    font-size: 36px;
-    line-height: 54px; 
+    @extend .textsize;
     color: #000;
     padding-right: 23px;
     cursor: default;
