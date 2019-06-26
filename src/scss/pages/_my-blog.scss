@@ -3,12 +3,12 @@
   padding: 50px 0;
 
   &__title-one {
-    @extend .bold-uppercase;
+    @extend %bold-uppercase;
     margin-bottom: 70px;
   }
   &__title-two {
-    @extend .bold-uppercase;
-    @extend .textsize;
+    @extend %bold-uppercase;
+    @extend %textsize;
     margin-bottom: 40px;
   }
   &__image {

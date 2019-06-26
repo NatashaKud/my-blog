@@ -1,6 +1,6 @@
 $color: #fff;
 
-.bold-uppercase {
+%bold-uppercase {
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .title {
-  @extend .bold-uppercase;
+  @extend %bold-uppercase;
   color: $color;
   margin-bottom: 22px;
 }
