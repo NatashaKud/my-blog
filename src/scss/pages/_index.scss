@@ -1,32 +1,115 @@
-$text-center: center;
-
-.title_center {
-  text-align: $text-center;
+@mixin button ($width, $pad, $bgc, $align) {
+  width: $width;
+  padding: $pad;
+  background-color: $bgc;
+  text-align: $align;
 }
 
 .info-block {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/info-block.png') no-repeat center / cover;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/rectangle.png') no-repeat center / cover;
+  padding: 50px 0 70px 0;
+  color: #FFFFFF;
 
-  &__content {
-    padding: 35px 0;
+  &__title {
+    margin-bottom: 40px;
   }
-  &__text {
-    color: $color;
-    margin: 0;
+  &__flex-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__page {
+    margin-right: 20px;
+  }
+  &__text_indent {
+    margin-bottom: 57px;
+  }
+  &__button {
+    @include button(127px, 14px 0, #FFE01B, center); 
+
+    &_link {
+      font-size: 24px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #000;
+    }
+  }
+}
+
+.my-blog {
+  background-color: #F2F2F2;
+  padding: 54px 0 55px 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__flex-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__wrapper-block {
+    width: 360px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.07);
+  }
+  &__news {
+    padding: 15px 19px 20px 21px;
+
+    &_title {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &_text {
+      text-align: justify;
+      margin-bottom: 47px;
+    }
+  }
+  &__data {
+    display: inline-block;
+  }
+  &__button {
+    @include button(214px, 13px 0, #FFE01B, center); 
+    display: inline-block;
+    margin-right: 21px;
+
+    &_link {
+      font-size: 24px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: black;
+    }
+    &_all-news {
+      @include button(278px, 13px 0, #FFE01B, center); 
+      margin: 59px auto 0 auto;
+    }
   }
 }
 
 .contacts {
-  background-color: #23374F;
+  background-color: #FFE01B;
+  padding: 33px 0 54px 0;
 
-  &__content {
-    padding: 33px 0;
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__flex-block {
+    display: flex;
+    justify-content: space-between;
   }
   &__wrapper-link {
-    text-align: $text-center;
-  }
-  &__link, &__link:hover {
-    color: $color;
+    width: 260px;
+    height: 171px;
+    background-color: #343434;
+    padding-top: 56px;
+    text-align: center;
   }
 }
 
+.phone {
+  position: fixed;
+  right: 75px;
+  bottom: 75px;
+}

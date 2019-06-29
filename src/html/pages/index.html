@@ -14,9 +14,62 @@
   <div class="info-block">
     <div class="container">
       <div class="info-block__content">
-        <h1 class="title">Краткая информация обо мне</h1>
-        <p class="info-block__text">Меня зовут Наташа, я пишу картины маслом, занимаюсь разведением 
-          суккулентов и читаю книги по научной фантастике, мой любимый автор Нил Стивенсон</p>
+        <h1 class="title info-block__title">Обо мне</h1>
+        <div class="info-block__flex-block">
+          <div class="info-block__page"><img src="./img/girl.png"></div>
+          <div class="info-block__text">
+            <p class="info-block__text_indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi culpa eveniet assumenda quia qui molestiae est ea odio quos voluptatibus perspiciatis, ipsam impedit tempore ducimus omnis deserunt adipisci inventore dicta consectetur, reiciendis fugiat ad! Eum excepturi accusantium amet odio corporis? Odio dignissimos repudiandae vero sapiente voluptatum laboriosam fuga quidem quos, nostrum voluptate, qui recusandae commodi. Aliquid tenetur repellat velit assumenda sapiente aspernatur ratione, error labore pariatur cum architecto debitis odio mollitia unde officiis distinctio quia quam, voluptas quidem quasi dolorum, repudiandae obcaecati. Veniam voluptatibus dolorum iste molestiae repellat officiis quibusdam recusandae sequi cupiditate, sit corrupti! Illo, esse quibusdam?</p>
+            <div class="info-block__button"> 
+              <a class="info-block__button_link" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-blog">
+    <div class="container">
+      <div class="my-blog__content">
+        <h1 class="title my-blog__title">Мой блог</h1>
+        <div class="my-blog__flex-block">
+          <div class="my-blog__wrapper-block">
+            <div class="my-blog__image"><img src="./img/fon-small.png"></div>
+            <div class="my-blog__news">
+              <h3 class="my-blog__news_title">Сегодня ходил в клуб заря</h3>
+              <p class="my-blog__news_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi culpa eveniet assumenda quia qui molestiae est ea odio quos voluptatibus perspiciatis, ipsam impedit tempore ducimus omnis deserunt adipisci inventore dicta consectetur...</p>
+              <div class="my-blog__button">
+                <a class="my-blog__button_link" href="./news.html">Перейти к новости</a>
+              </div>
+              <p class="my-blog__data">26.06.2019</p>
+            </div>
+          </div>
+          <div class="my-blog__wrapper-block">
+            <div class="my-blog__image"><img src="./img/fon-small.png"></div>
+            <div class="my-blog__news">
+              <h3 class="my-blog__news_title">Сегодня ходил в клуб заря</h3>
+              <p class="my-blog__news_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi culpa eveniet assumenda quia qui molestiae est ea odio quos voluptatibus perspiciatis, ipsam impedit tempore ducimus omnis deserunt adipisci inventore dicta consectetur...</p>
+              <div class="my-blog__button">
+                <a class="my-blog__button_link" href="./news.html">Перейти к новости</a>
+              </div>
+              <p class="my-blog__data">26.06.2019</p>
+            </div>
+          </div>
+          <div class="my-blog__wrapper-block">
+            <div class="my-blog__image"><img src="./img/fon-small.png"></div>
+            <div class="my-blog__news">
+              <h3 class="my-blog__news_title">Сегодня ходил в клуб заря</h3>
+              <p class="my-blog__news_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi culpa eveniet assumenda quia qui molestiae est ea odio quos voluptatibus perspiciatis, ipsam impedit tempore ducimus omnis deserunt adipisci inventore dicta consectetur...</p>
+              <div class="my-blog__button">
+                <a class="my-blog__button_link" href="./news.html">Перейти к новости</a>
+              </div>
+              <p class="my-blog__data">26.06.2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-blog__button_all-news"> 
+          <a class="my-blog__button_link" href="./my-blog.html">Посмотреть все новости</a>
+        </div>
       </div>
     </div>
   </div>
@@ -24,20 +77,27 @@
   <div class="contacts">
     <div class="container">
       <div class="contacts__content">
-        <h1 class="title title_center">Контакты</h1>
-        <div class="contacts__wrapper-link">
+        <h1 class="title contacts__title">Контакты</h1>
+        <div class="contacts__flex-block">
           <a class="contacts__link" href="https://vk.com/cosmosliva" target="_blank">
-            Cсылка на VK
+            <div class="contacts__wrapper-link">
+              <img src="./img/vk-icon.png">
+            </div>
           </a>
-        </div>
-        <div class="contacts__wrapper-link">
           <a class="contacts__link" href="https://www.instagram.com/cosmosliva/" target="_blank">
-            Ссылка на Instagram
+            <div class="contacts__wrapper-link">
+              <img src="./img/instagram-icon.png">
+            </div>
           </a>
-        </div>
-        <div class="contacts__wrapper-link">
           <a class="contacts__link" href="tel:89270175754" target="_blank">
-            8(927)-017-57-54
+            <div class="contacts__wrapper-link">
+              <img src="./img/phone-icon.png">  
+            </div>
+          </a>
+          <a class="contacts__link" href="#" target="_blank">
+            <div class="contacts__wrapper-link">
+              <img src="./img/mail-icon.png">
+            </div>
           </a>
         </div>
       </div>
@@ -45,6 +105,10 @@
   </div>
 
   @@include('./../components/footer.html')
+
+  <div class="phone">
+    <img src="./img/phone.png">
+  </div> 
 
 </body>
 <script src="script.js"></script>

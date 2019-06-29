@@ -1,0 +1,33 @@
+.news {
+  background-color: #F2F2F2;
+  padding: 50px 0 57px 0;
+
+  &__title-one {
+    margin-bottom: 55px;
+  }
+  &__title-two {
+    font-size: 44px;
+    line-height: 60px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__image {
+    margin-bottom: 40px;
+    width: 1140px;
+    height: 299px;
+    background-image: url('./img/fon.png');
+  }
+  &__text {
+    width: 980px;
+    margin: 0 auto;
+
+    &_indent {
+      margin-bottom: 52px;
+    }
+    &_data {
+      margin: 40px 0 0 0;
+    }
+  }
+}
+

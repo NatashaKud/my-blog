@@ -1,9 +1,4 @@
-$color: #fff;
 
-%bold-uppercase {
-  text-transform: uppercase;
-  font-weight: bold;
-}
 
 body {
   margin: 0;
@@ -11,8 +6,8 @@ body {
 }
 
 * {
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 20px;
+  line-height: 27px;
   font-weight: 300;
 }
 
@@ -23,7 +18,9 @@ body {
 }
 
 .title {
-  @extend %bold-uppercase;
-  color: $color;
-  margin-bottom: 22px;
+  font-size: 55px;
+  line-height: 75px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
+

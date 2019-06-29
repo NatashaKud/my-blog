@@ -1,9 +1,17 @@
 .footer {
-  background: #45B7E3;
+  padding: 34px 0;
 
+  &__content {
+    @extend .header__content;
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    padding-right: 12px;
+  }
   &__copyright-text {
-    text-align: right;
-    padding: 18px 0 17px 0;
-    color: $color;
+    font-size: 16px;
+    line-height: 22px;
   }
 }

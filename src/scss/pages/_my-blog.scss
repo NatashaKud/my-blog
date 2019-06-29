@@ -1,31 +1,17 @@
-.my-blog {
-  background-color: #FFE01B;
-  padding: 50px 0;
+.blog {
+  background-color: #F2F2F2;
+  padding: 49px 0 54px 0;
 
-  &__title-one {
-    @extend %bold-uppercase;
+  &__title {
     margin-bottom: 70px;
   }
-  &__title-two {
-    @extend %bold-uppercase;
-    @extend %textsize;
-    margin-bottom: 40px;
-  }
-  &__image {
-    margin-bottom: 35px;
-  }
-  &__line {
-    border: 1px solid #000;
-    margin: 53px 0 47px 0;
-  }
-  &__text {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 20px;
-
-    &_indent {
-      margin-bottom: 0;
-    }
+  &__flex-block {
+    display: flex;
+    height: 1064px;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
   }
 }
+
+
