@@ -21,7 +21,7 @@
   &__button {
     @include button(127px, 14px 0, #FFE01B, center); 
     @include text-size(24px, 24px);
-    // font-family: 'Bebas Neue', arial;
+    font-family: 'Bebas Neue', arial;
 
     &_link {
       text-transform: uppercase;
@@ -80,7 +80,7 @@
     &_all-news {
       @include button(278px, 13px 0, #FFE01B, center);
       @include text-size(24px, 24px); 
-      // font-family: 'Bebas Neue', arial;
+      font-family: 'Bebas Neue', arial;
       margin: 59px auto 0 auto;
     }
   }
