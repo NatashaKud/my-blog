@@ -1,10 +1,3 @@
-@mixin button ($width, $pad, $bgc, $align) {
-  width: $width;
-  padding: $pad;
-  background-color: $bgc;
-  text-align: $align;
-}
-
 .info-block {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/rectangle.png') no-repeat center / cover;
   padding: 50px 0 70px 0;
@@ -14,10 +7,12 @@
     margin-bottom: 40px;
   }
   &__flex-block {
-    display: flex;
-    justify-content: space-between;
+    @extend %flexbox;
   }
   &__page {
+    min-width: 280px;
+    min-height: 265px;
+    background: url('./img/girl.png') no-repeat center / cover;
     margin-right: 20px;
   }
   &__text_indent {
@@ -25,36 +20,37 @@
   }
   &__button {
     @include button(127px, 14px 0, #FFE01B, center); 
+    @include text-size(24px, 24px);
+    // font-family: 'Bebas Neue', arial;
 
     &_link {
-      font-size: 24px;
-      line-height: 24px;
       text-transform: uppercase;
-      color: #000;
+      @extend %linkstyle;
     }
   }
 }
 
 .my-blog {
-  background-color: #F2F2F2;
-  padding: 54px 0 55px 0;
+  @include fon-block(#F2F2F2, 54px 0 55px 0);
 
   &__title {
     text-align: center;
     margin-bottom: 40px;
   }
   &__flex-block {
-    display: flex;
-    justify-content: space-between;
+    @extend %flexbox;
     flex-wrap: wrap;
   }
   &__wrapper-block {
-    width: 360px;
-    background-color: #FFFFFF;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.07);
   }
+  &__image {
+    @include page-size(380px, 185px);
+    background-image: url('./img/fon-small.png');
+  }
   &__news {
-    padding: 15px 19px 20px 21px;
+    width: 380px;
+    @include fon-block(#FFFFFF, 15px 19px 20px 21px);
 
     &_title {
       text-transform: uppercase;
@@ -68,39 +64,40 @@
   }
   &__data {
     display: inline-block;
+    margin-bottom: 0;
   }
   &__button {
-    @include button(214px, 13px 0, #FFE01B, center); 
+    @include button(214px, 13px 0, #FFE01B, center);
+    @include text-size(24px, 24px); 
+    // font-family: 'Bebas Neue', arial;
     display: inline-block;
     margin-right: 21px;
 
     &_link {
-      font-size: 24px;
-      line-height: 24px;
       text-transform: uppercase;
-      color: black;
+      @extend %linkstyle;
     }
     &_all-news {
-      @include button(278px, 13px 0, #FFE01B, center); 
+      @include button(278px, 13px 0, #FFE01B, center);
+      @include text-size(24px, 24px); 
+      // font-family: 'Bebas Neue', arial;
       margin: 59px auto 0 auto;
     }
   }
 }
 
 .contacts {
-  background-color: #FFE01B;
-  padding: 33px 0 54px 0;
+  @include fon-block(#FFE01B, 33px 0 54px 0);
 
   &__title {
     text-align: center;
     margin-bottom: 30px;
   }
   &__flex-block {
-    display: flex;
-    justify-content: space-between;
+    @extend %flexbox;
   }
   &__wrapper-link {
-    width: 260px;
+    width: 280px;
     height: 171px;
     background-color: #343434;
     padding-top: 56px;
@@ -110,6 +107,6 @@
 
 .phone {
   position: fixed;
-  right: 75px;
-  bottom: 75px;
+  right: 30px;
+  bottom: 70px;
 }

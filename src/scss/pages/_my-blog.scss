@@ -1,17 +1,13 @@
 .blog {
-  background-color: #F2F2F2;
-  padding: 49px 0 54px 0;
+  @include fon-block(#F2F2F2, 49px 0 54px 0);
 
   &__title {
     margin-bottom: 70px;
   }
   &__flex-block {
-    display: flex;
-    height: 1064px;
-    justify-content: space-between;
+    height: 1002px;
+    @extend %flexbox;
     align-content: space-between;
     flex-wrap: wrap;
   }
 }
-
-

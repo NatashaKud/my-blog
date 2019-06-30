@@ -1,4 +1,34 @@
+@mixin button ($width, $pad, $bgc, $align) {
+  width: $width;
+  padding: $pad;
+  background-color: $bgc;
+  text-align: $align;
+} 
 
+@mixin fon-block ($bgc, $pads...) {
+  background-color: $bgc;
+  padding: $pads;
+}
+
+@mixin text-size ($font, $line) {
+  font-size: $font;
+  line-height: $line;
+}
+
+@mixin page-size ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+%flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+%linkstyle {
+  color: #000;
+  text-decoration: none !important;
+}
 
 body {
   margin: 0;
@@ -6,21 +36,18 @@ body {
 }
 
 * {
-  font-size: 20px;
-  line-height: 27px;
+  @include text-size(20px, 27px);
   font-weight: 300;
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1220px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 .title {
-  font-size: 55px;
-  line-height: 75px;
+  @include text-size(55px, 75px);
   text-transform: uppercase;
   font-weight: bold;
 }
-
