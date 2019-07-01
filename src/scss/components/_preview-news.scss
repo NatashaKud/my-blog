@@ -27,7 +27,7 @@
   &__button {
     @include button(214px, 13px 0, #FFE01B, center);
     @include text-size(24px, 24px); 
-    // font-family: 'Bebas Neue', arial;
+    // font-family: 'Bebas Neue', sans-serif;
     display: inline-block;
     margin-right: 21px;
 

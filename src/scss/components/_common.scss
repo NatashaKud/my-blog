@@ -1,3 +1,10 @@
+//Open Sans Condensed
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap&subset=cyrillic');
+// Bebas Neue
+@import url('http://allfont.ru/allfont.css?fonts=bebas-neue');
+// Reboot
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css');
+
 @mixin button ($width, $pad, $bgc, $align) {
   width: $width;
   padding: $pad;
@@ -32,7 +39,7 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 * {
