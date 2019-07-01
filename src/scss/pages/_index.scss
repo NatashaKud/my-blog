@@ -41,48 +41,11 @@
     @extend %flexbox;
     flex-wrap: wrap;
   }
-  &__wrapper-block {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.07);
-  }
-  &__image {
-    @include page-size(380px, 185px);
-    background-image: url('./img/fon-small.png');
-  }
-  &__news {
-    width: 380px;
-    @include fon-block(#FFFFFF, 15px 19px 20px 21px);
-
-    &_title {
-      text-transform: uppercase;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    &_text {
-      text-align: justify;
-      margin-bottom: 47px;
-    }
-  }
-  &__data {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-  &__button {
-    @include button(214px, 13px 0, #FFE01B, center);
+  &__button_all-news {
+    @include button(278px, 13px 0, #FFE01B, center);
     @include text-size(24px, 24px); 
-    // font-family: 'Bebas Neue', arial;
-    display: inline-block;
-    margin-right: 21px;
-
-    &_link {
-      text-transform: uppercase;
-      @extend %linkstyle;
-    }
-    &_all-news {
-      @include button(278px, 13px 0, #FFE01B, center);
-      @include text-size(24px, 24px); 
-      font-family: 'Bebas Neue', arial;
-      margin: 59px auto 0 auto;
-    }
+    font-family: 'Bebas Neue', arial;
+    margin: 59px auto 0 auto;
   }
 }
 
