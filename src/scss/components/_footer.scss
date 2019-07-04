@@ -1,15 +1,18 @@
 .footer {
-  @include fon-block(#fff, 34px 0);
+  background: #fff;
 
   &__content {
-    @extend .header__content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 0;
   }
-  &__link {
-    @include text-size(16px, 22px);
-    @extend %linkstyle;
-    padding-right: 12px;
-  }
+  
   &__copyright-text {
-    @include text-size(16px, 22px);
+    @include text-size(16, 22);
+  }
+
+  &__link {
+    padding-right: 9px;
   }
 }

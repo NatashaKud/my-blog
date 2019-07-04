@@ -1,75 +1,135 @@
 .info-block {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/rectangle.png') no-repeat center / cover;
-  padding: 50px 0 70px 0;
-  color: #FFFFFF;
 
-  &__title {
-    margin-bottom: 40px;
+  &__content {
+    padding: 48px 0;
   }
   &__flex-block {
-    @extend %flexbox;
+    display: flex;
   }
   &__page {
     min-width: 280px;
-    min-height: 265px;
+    height: 265px;
     background: url('./img/girl.png') no-repeat center / cover;
     margin-right: 20px;
   }
-  &__text_indent {
-    margin-bottom: 57px;
-  }
-  &__button {
-    @include button(127px, 14px 0, #FFE01B, center); 
-    @include text-size(24px, 24px);
-    font-family: 'Bebas Neue', sans-serif;
-
-    &_link {
-      text-transform: uppercase;
-      @extend %linkstyle;
-    }
+  &__text {
+    padding-bottom: 57px;
+    color: #fff;
   }
 }
 
 .my-blog {
-  @include fon-block(#F2F2F2, 54px 0 55px 0);
+  background: #F2F2F2;
 
-  &__title {
-    text-align: center;
-    margin-bottom: 40px;
+  &__content {
+    padding: 50px 0;
   }
-  &__flex-block {
-    @extend %flexbox;
+  &__preview-news {
+    padding-bottom: 50px;
     flex-wrap: wrap;
-  }
-  &__button_all-news {
-    @include button(278px, 13px 0, #FFE01B, center);
-    @include text-size(24px, 24px); 
-    font-family: 'Bebas Neue', sans-serif;
-    margin: 59px auto 0 auto;
   }
 }
 
 .contacts {
-  @include fon-block(#FFE01B, 33px 0 54px 0);
+  background-color: #FFE01B;
 
-  &__title {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  &__flex-block {
-    @extend %flexbox;
-  }
-  &__wrapper-link {
-    width: 280px;
+  &__content {
+    padding: 50px 0;
+  } 
+  &__link {
+    width: 300px;
     height: 171px;
+    margin: 0 10px;
     background-color: #343434;
-    padding-top: 56px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    transition: transform 1000ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:hover .contacts__icon {
+      transform: translateY(0);
+    }
+    &:hover .contacts__icon_text {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  &__icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(20px);
+    transition: transform 1000ms;
+
+    &_text {
+      text-transform: uppercase;
+      padding-top: 20px;
+      opacity: 0;
+      color: #fff;
+      transform: translateY(-20px);
+      transition: transform 1000ms;
+    }
+    &_vk {
+      background-image: url('./img/vk-icon.png');
+      width: 82px;
+      height: 45px;
+    }
+    &_inst {
+      background-image: url('./img/instagram-icon.png');
+      width: 59px;
+      height: 57px;
+    }
+    &_phone {
+      background-image: url('./img/phone-icon.png');
+      width: 62px;
+      height: 60px;
+    }
+    &_mail {
+      background-image: url('./img/mail-icon.png');
+      width: 74px;
+      height: 60px;
+    }
   }
 }
 
 .phone {
   position: fixed;
   right: 30px;
-  bottom: 70px;
+  bottom: 70px; 
+
+  &__img {
+    width: 62px;
+    height: 60px;
+    background-image: url('./img/phone-icon.png');
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    animation: img 2s infinite ease-in-out;
+  }
+
+  @keyframes img {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(45deg)}
+  }
+
+  &__pulse {
+    width: 100px; 
+    height: 100px;
+    background: #ff6969;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {transform: scale(0.8);}
+    15% {box-shadow: 0 0 0 0px rgba(255, 105, 105, 0.5);}
+    75% {box-shadow: 0 0 0 50px rgba(255, 105, 105, 0);}
+    100% {transform: scale(1);}
+  }
 }

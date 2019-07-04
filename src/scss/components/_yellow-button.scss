@@ -1,0 +1,29 @@
+.yellow-button {
+  background-color: #FFE01B;
+  padding: 14px 21px 6px 20px;
+  width: fit-content;
+  transition: transform 500ms ease-in;
+
+  &:hover {
+    background: #ECCC00;
+    transform: scale(1.1);
+  }
+  &:active{
+    background: #FFEB6C;
+  }
+  &_center {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    @include text-size(24, 24);
+
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}

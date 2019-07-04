@@ -5,46 +5,16 @@
 // Reboot
 @import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css');
 
-@mixin button ($width, $pad, $bgc, $align) {
-  width: $width;
-  padding: $pad;
-  background-color: $bgc;
-  text-align: $align;
-} 
-
-@mixin fon-block ($bgc, $pads...) {
-  background-color: $bgc;
-  padding: $pads;
-}
-
 @mixin text-size ($font, $line) {
-  font-size: $font;
-  line-height: $line;
-}
-
-@mixin page-size ($width, $height) {
-  width: $width;
-  height: $height;
-}
-
-%flexbox {
-  display: flex;
-  justify-content: space-between;
-}
-
-%linkstyle {
-  color: #000;
-  text-decoration: none !important;
+  font-size: $font + px;
+  line-height: $line + px;
 }
 
 body {
-  margin: 0;
+  color: #000;
+  font-size: 20px;
+  line-height: 27px;
   font-family: 'Open Sans Condensed', sans-serif;
-}
-
-* {
-  @include text-size(20px, 27px);
-  font-weight: 300;
 }
 
 .container {
@@ -53,8 +23,45 @@ body {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  margin: 0 -10px;
+}
+
 .title {
-  @include text-size(55px, 75px);
   text-transform: uppercase;
   font-weight: bold;
+
+  &_one {
+    @include text-size(55, 75);
+    margin-bottom: 40px;
+  }
+  &_two {
+    @include text-size(44, 60);
+    margin: 55px 0 45px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &_white {
+    color: #fff;
+  }
+  &_center {
+    text-align: center;
+  }
+  &_inline {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  &_my-blog {
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  color: #000;
+  @include text-size(16, 22);
+
+  &:hover {
+    color: #FF6969;
+  }
 }

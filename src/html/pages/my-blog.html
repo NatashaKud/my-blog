@@ -3,7 +3,6 @@
   <meta charset="UTF-8">
   <link href="main.css" rel="stylesheet">
   <link rel="shortcut icon" href="./img/cactus.png" type="image/png">
-  
   <title>Блог Наташи Кудряшовой</title>
 </head>
 <body>
@@ -13,8 +12,8 @@
   <div class="blog">
     <div class="container">
       <div class="blog__content">
-        <h1 class="title blog__title">Мой блог</h1>
-        <div class="blog__flex-block">
+        <h1 class="title title_one title_my-blog">Мой блог</h1>
+        <div class="blog__preview-news row">
             @@include('./../components/preview-news.html')
             @@include('./../components/preview-news.html')
             @@include('./../components/preview-news.html')
@@ -22,11 +21,13 @@
             @@include('./../components/preview-news.html')
             @@include('./../components/preview-news.html')
         </div>
-        <a class="my-blog__button_link" href="#">
-          <div class="my-blog__button_all-news"> 
-            Загрузить еще
-          </div>
-        </a>
+        
+        @@include('./../components/yellow-button.html', {
+          "text": "Загрузить еще",
+          "href": "my-blog.html",
+          "class": "yellow-button_center"
+        })
+
       </div>
     </div>
   </div>

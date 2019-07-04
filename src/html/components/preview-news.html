@@ -1,13 +1,15 @@
-<div class="my-blog__wrapper-block">
-  <div class="my-blog__image"></div>
-  <div class="my-blog__news">
-    <h1 class="my-blog__news_title">Сегодня ходил в клуб заря</h1>
-    <p class="my-blog__news_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi culpa eveniet assumenda quia qui molestiae est ea odio quos voluptatibus perspiciatis, ipsam impedit tempore ducimus omnis deserunt adipisci inventore dicta consectetur...</p>
-    <a class="my-blog__button_link" href="./news.html">
-      <div class="my-blog__button">
-        Перейти к новости
+<div class="preview-news">
+  <div class="preview-news__shadow-wrapper"></div>
+    <div class="preview-news__image"></div>
+    <div class="preview-news__content">
+      <div class="preview-news__title">Сегодня ходил в клуб заря</div>
+      <div class="preview-news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi culpa eveniet assumenda quia qui molestiae est ea odio quos voluptatibus perspiciatis, ipsam impedit tempore ducimus omnis deserunt adipisci inventore dicta consectetur...</div>
+      <div class="preview-news__sub-wrapper">
+      @@include('./../components/yellow-button.html', {
+        "text": "Перейти к новости",
+        "href": "news.html"
+      })
+      <div class="preview-news__data">26.06.2019</div>
       </div>
-    </a>
-    <p class="my-blog__data">26.06.2019</p>
-  </div>
+    </div>
 </div>

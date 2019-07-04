@@ -1,18 +1,23 @@
 .header {
-  @include fon-block(#fff, 27px 0);
+  background: #fff;
 
   &__content {
-    @extend %flexbox;
+    padding: 27px 0;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   &__logo {
-    @include page-size(115px, 48px);
-    background-image: url('./img/logo.png');
+    background: url('./img/logo.png') no-repeat center / contain;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 115px;
+    height: 47.57px;
+
+    &:hover {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    }
   }
   &__link {
-    @include text-size(16px, 22px);
-    @extend %linkstyle;
-    padding-left: 12px;
+    padding-left: 9px;
   }
 }

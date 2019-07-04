@@ -1,21 +1,12 @@
 .news {
-  @include fon-block(#F2F2F2, 50px 0 57px 0);
+  background: #F2F2F2;
 
-  &__title-one {
-    margin-bottom: 55px;
-    display: inline-block;
-  }
-  &__text-inline {
-    display: inline-block;
-  }
-  &__title-two {
-    @include text-size(44px, 60px);
-    margin-bottom: 45px;
-    text-transform: uppercase;
-    font-weight: bold;
+  &__content {
+    padding: 50px 0 57px 0;
   }
   &__image {
-    @include page-size(1180px, 299px);
+    width: 1180px;
+    height: 299px;
     background-image: url('./img/fon.png');
     margin-bottom: 40px;
   }
@@ -24,7 +15,7 @@
     margin: 0 auto;
 
     &_indent {
-      margin-bottom: 52px;
+      margin-bottom: 55px;
     }
     &_data {
       margin: 40px 0 0 0;

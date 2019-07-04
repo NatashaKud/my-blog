@@ -1,13 +1,12 @@
 .blog {
-  @include fon-block(#F2F2F2, 49px 0 54px 0);
+  background: #F2F2F2;
 
-  &__title {
-    margin-bottom: 70px;
+  &__content {
+    padding: 49px 0 54px 0;
   }
-  &__flex-block {
-    height: 1002px;
-    @extend %flexbox;
-    align-content: space-between;
+  &__preview-news {
     flex-wrap: wrap;
+    padding-bottom: 40px;
+    padding-top: 70px;
   }
 }
