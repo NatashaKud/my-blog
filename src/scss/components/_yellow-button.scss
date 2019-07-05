@@ -1,6 +1,6 @@
 .yellow-button {
   background-color: #FFE01B;
-  padding: 14px 21px 6px 20px;
+  padding: 10px 20px 6px 21px;
   width: fit-content;
   transition: transform 500ms ease-in;
 
@@ -19,7 +19,7 @@
     font-family: 'Bebas Neue', sans-serif;
     color: #000;
     text-transform: uppercase;
-    @include text-size(24, 24);
+    // @include text-size(24, 24);
 
     &:hover {
       text-decoration: none;
