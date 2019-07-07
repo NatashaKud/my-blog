@@ -2,7 +2,7 @@
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/rectangle.png') no-repeat center / cover;
 
   &__content {
-    padding: 48px 0;
+    padding: 49px 0 69px 0;
   }
   &__flex-block {
     display: flex;
@@ -14,7 +14,7 @@
     margin-right: 20px;
   }
   &__text {
-    padding-bottom: 57px;
+    padding-bottom: 59px;
     color: #fff;
   }
 }
@@ -23,10 +23,10 @@
   background: #F2F2F2;
 
   &__content {
-    padding: 50px 0;
+    padding: 55px 0 55px 0;
   }
   &__preview-news {
-    padding-bottom: 50px;
+    padding-bottom: 41px;
     flex-wrap: wrap;
   }
 }
@@ -35,7 +35,7 @@
   background-color: #FFE01B;
 
   &__content {
-    padding: 50px 0;
+    padding: 32px 0 54px 0;
   } 
   &__link {
     width: 300px;
@@ -64,7 +64,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    transform: translateY(20px);
+    transform: translateY(25px);
     transition: transform 1000ms;
 
     &_text {
@@ -100,8 +100,8 @@
 
 .phone {
   position: fixed;
-  right: 30px;
-  bottom: 55px; 
+  right: 40px;
+  bottom: 80px; 
 
   &__img {
     width: 62px;

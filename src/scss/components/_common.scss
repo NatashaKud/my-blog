@@ -1,7 +1,7 @@
 //Open Sans Condensed
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap&subset=cyrillic');
 // Bebas Neue
-@import url('http://allfont.ru/allfont.css?fonts=bebas-neue');
+// @import url('http://allfont.ru/allfont.css?fonts=bebas-neue');
 // Reboot
 @import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css');
 
@@ -34,7 +34,7 @@ body {
 
   &_one {
     @include text-size(55, 75);
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
   }
   &_two {
     @include text-size(44, 60);
@@ -44,15 +44,22 @@ body {
   }
   &_white {
     color: #fff;
+    margin-bottom: 40px;
   }
   &_center {
     text-align: center;
+  }
+  &_my-blog {
+    margin-bottom: 40px;
+  }
+  &_contacts {
+    margin-bottom: 28px;
   }
   &_inline {
     display: inline-block;
     margin-bottom: 0;
   }
-  &_my-blog {
+  &_blog {
     margin-bottom: 0;
   }
 }
