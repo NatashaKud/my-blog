@@ -32,15 +32,8 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 
-  &_one {
+  &_size {
     @include text-size(55, 75);
-    // margin-bottom: 40px;
-  }
-  &_two {
-    @include text-size(44, 60);
-    margin: 55px 0 45px 0;
-    text-transform: uppercase;
-    font-weight: bold;
   }
   &_white {
     color: #fff;
@@ -49,17 +42,11 @@ body {
   &_center {
     text-align: center;
   }
-  &_my-blog {
+  &_one {
     margin-bottom: 40px;
-  }
-  &_contacts {
-    margin-bottom: 28px;
   }
   &_inline {
     display: inline-block;
-    margin-bottom: 0;
-  }
-  &_blog {
     margin-bottom: 0;
   }
 }

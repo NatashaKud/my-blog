@@ -2,7 +2,13 @@
   background: #F2F2F2;
 
   &__content {
-    padding: 50px 0 57px 0;
+    padding: 50px 0 50px 0;
+  }
+  &__title {
+    @include text-size(44, 60);
+    margin: 40px 0 35px 0;
+    text-transform: uppercase;
+    font-weight: bold;
   }
   &__image {
     width: 1180px;

@@ -1,0 +1,14 @@
+.gallery-img {
+  padding: 0 10px;
+  margin-bottom: 20px;
+
+  &__image {
+    height: 246px;
+  }
+  &__flex-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+}
