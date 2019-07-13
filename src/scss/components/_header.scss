@@ -6,6 +6,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1023px) and (min-width: 768px) {
+      padding: 25px 0;
+    }
+    @media (max-width: 767px) and (min-width: 640px) {
+      padding: 25px 0;
+    }
+    @media (max-width: 639px) {
+      padding: 25px 0;
+    }
+  }
+  &__menu {
+    display: none;
+    width:30px;
+    height: 24px;
+    border-bottom: 2px solid black; 
+    border-top: 2px solid black;
+
+    &_liner {
+      height: 11px;
+      border-bottom: 2px solid black;
+    }
+
+    @media (max-width: 639px) {
+      display: block;
+    }
   }
   &__logo {
     background: url('./img/logo.png') no-repeat center / contain;
@@ -19,5 +45,9 @@
   }
   &__link {
     padding-left: 9px;
+
+    @media (max-width: 639px) {
+      display: none;
+    }
   }
 }

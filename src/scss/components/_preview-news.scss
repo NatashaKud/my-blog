@@ -1,6 +1,6 @@
 .preview-news {
-  max-width: 400px;
-  padding: 0 10px;
+  // max-wi/dth: 400px;
+  // padding: 0 10px;
   position: relative;
   margin-bottom: 20px;
 
@@ -9,9 +9,9 @@
     background-color: #fff;
     z-index: 0;
     top: 0;
-    right: 10px;
+    right: 0;
     bottom: 0;
-    left: 10px;
+    left: 0;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.07);
   }
   &__image {
