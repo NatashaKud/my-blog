@@ -45,7 +45,8 @@
   }
   &__link {
     padding-left: 9px;
-
+  }
+  &__links {
     @media (max-width: 639px) {
       display: none;
     }
