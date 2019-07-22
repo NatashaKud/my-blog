@@ -6,12 +6,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background: #f5c855;
+  }
+
+  @media (max-width: 1023px) and (min-width: 768px) {
+    width: 210px;
+    height: 40px;
+  }
+  @media (max-width: 767px) and (min-width: 640px) {
+    width: 210px;
+    height: 40px;
+  }
+  @media (max-width: 639px) {
+    width: 100%;
+    height: 40px;
+  }
   
   &__link {
-    font-size: 13px;
-    line-height: 18px;
+    @include text-size(13, 18);
     text-transform: uppercase;
     font-weight: bold;
     color: #3A4959;
+
+    &:hover {
+      color: #3A4959;
+    }
   }
 }
