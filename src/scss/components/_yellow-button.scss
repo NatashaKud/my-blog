@@ -1,4 +1,28 @@
 .yellow-button {
+  @media (max-width: 1199px) and (min-width: 1024px) {
+    .yellow-button__link {
+      @include text-size(20, 24);
+    }
+  }
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .yellow-button__link {
+      @include text-size(22, 22);
+    }
+    
+  }
+  @media (max-width: 767px) and (min-width: 640px) {
+    .yellow-button__link {
+      @include text-size(22, 22);
+    }
+    
+  }
+  @media (max-width: 639px) {
+    .yellow-button__link {
+      @include text-size(20, 20);
+    }
+    
+  }
+
   background-color: #FFE01B;
   padding: 11px 21px 9px 21px;
   width: fit-content;

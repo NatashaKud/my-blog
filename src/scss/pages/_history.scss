@@ -1,4 +1,98 @@
 .history {
+  @media (max-width: 1199px) and (min-width: 1024px) {
+
+  }
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .history__content {
+      padding: 30px 0 30px 0;
+    }
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 40px;
+    }
+    .history__title-two {
+      @include text-size(32, 34);
+      margin-bottom: 20px;
+    }
+    .history__icon-text {
+      @include text-size(22, 30);
+      bottom: 29px;
+    }
+    .history__title-one {
+      margin-bottom: 30px;
+    }
+    .history__icon_city {
+      margin-right: 0;
+    }
+    .history__icon {
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 767px) and (min-width: 640px) {
+    .history__content {
+      padding: 30px 0 30px 0;
+    }
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 40px;
+    }
+    .history__title-two {
+      @include text-size(32, 34);
+      margin-bottom: 20px;
+    }
+    .history__icon-text {
+      @include text-size(22, 30);
+      bottom: 29px;
+    }
+    .history__title-one {
+      margin-bottom: 30px;
+    }
+    .history__icon_city {
+      margin-right: 0;
+    }
+    .history__icon {
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 639px) {
+    .history__content {
+      padding: 30px 0 25px 0;
+    }
+    .gallery {
+      grid-template-columns: 1fr;
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+    .history__flex-block {
+      display: block;
+    }
+    .history__title-two {
+      @include text-size(21, 30);
+      margin-bottom: 20px;
+    }
+    .history__page {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+    .history__icon-text {
+      @include text-size(20, 28);
+    }
+    .history__icon_city {
+      margin-right: 0;
+    }
+    .history__icon {
+      margin-top: 10px;
+    }
+    .history__title-one {
+      margin-bottom: 20px;
+    }
+    .yellow-button {
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+
   background: #F2F2F2;
 
   &__content {
@@ -60,9 +154,12 @@
 }
 
 .gallery {
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin-top: 27px;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 
