@@ -9,30 +9,30 @@
 <body>
 
   @@include('./../components/header.html')
+  <main>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__content">
+          <h1 class="title title_size title_one">Мой блог</h1>
+          <div class="blog__preview-news">
+              @@include('./../components/preview-news.html')
+              @@include('./../components/preview-news.html')
+              @@include('./../components/preview-news.html')
+              @@include('./../components/preview-news.html')
+              @@include('./../components/preview-news.html')
+              @@include('./../components/preview-news.html')
+          </div>
+          
+          @@include('./../components/yellow-button.html', {
+            "text": "Загрузить еще",
+            "href": "my-blog.html",
+            "class": "yellow-button_center"
+          })
 
-  <div class="blog">
-    <div class="container">
-      <div class="blog__content">
-        <h1 class="title title_size title_one">Мой блог</h1>
-        <div class="blog__preview-news">
-            @@include('./../components/preview-news.html')
-            @@include('./../components/preview-news.html')
-            @@include('./../components/preview-news.html')
-            @@include('./../components/preview-news.html')
-            @@include('./../components/preview-news.html')
-            @@include('./../components/preview-news.html')
         </div>
-        
-        @@include('./../components/yellow-button.html', {
-          "text": "Загрузить еще",
-          "href": "my-blog.html",
-          "class": "yellow-button_center"
-        })
-
       </div>
-    </div>
-  </div>
-
+    </section>
+  </main>
   @@include('./../components/footer.html')
 
   @@include('./../components/phone.html')
